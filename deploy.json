@@ -1,11 +1,11 @@
 {
     "project": {
-        "version": "5.3.3",
+        "version": "6-dev.1",
         "name": "Yggdrasil Alternative",
         "filename": "Yggdrasil-Alternative"
     },
     "modrinth": {
-        "enabled": true,
+        "enabled": false,
         "project_id": "nJLo0AtD",
         "featured": false,
         "dependencies": [
@@ -26,7 +26,7 @@
             "dependencies": []
         },
         "mod": {
-            "enabled": true,
+            "enabled": false,
             "project_id": 1417361,
             "java_versions": [
                 "Java 21",
