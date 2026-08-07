@@ -1,62 +1,65 @@
 {
-  "type": "minecraft:chest",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:chest",
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:trident",
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "fallback": "Gungnir",
-                "color": "#FFD700",
-                "italic": false,
-                "bold": true
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "fallback": "The sacred lance of the Father of All Things",
-                  "color": "#AAAAAA",
-                  "italic": true
+                    "type": "minecraft:item",
+                    "name": "minecraft:trident",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.yggdrasil.asgard.gungnir",
+                                "fallback": "Gungnir",
+                                "color": "#FFD700",
+                                "italic": false,
+                                "bold": true
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.yggdrasil.asgard.gungnir.lore",
+                                    "fallback": "The sacred lance of the Father of All Things",
+                                    "color": "#AAAAAA",
+                                    "italic": true
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:impaling": 5,
+                                "minecraft:unbreaking": 3,
+                                "minecraft:mending": 1,
+                                "minecraft:channeling": 1,
+                                "minecraft:riptide": 5
+                            },
+                            "add": false
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:unbreakable"
+                                    ]
+								},
+                                "minecraft:custom_data": {
+                                    "yggdrasil": {
+                                        "id": "yggdrasil.asgard.treasure.gungnir"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
-              ],
-              "mode": "replace_all"
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:impaling": 5,
-                "minecraft:unbreaking": 3,
-                "minecraft:mending": 1,
-                "minecraft:channeling": 1,
-                "minecraft:riptide": 5
-              },
-              "add": false
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:durability": {
-                  "max_damage": 500,
-                  "damage": 0
-                },
-                "minecraft:custom_data": {
-                  "yggdrasil": {
-                    "id": "yggdrasil.asgard.treasure.gungnir"
-                  }
-                }
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ],
-  "random_sequence": "yggdrasil:asgard/treasure"
+    ],
+    "random_sequence": "yggdrasil:asgard/treasure"
 }
