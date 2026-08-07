@@ -34,6 +34,11 @@
                 "minecraft:durability": {
                   "max_damage": 3122, 
                   "damage": 0
+                },
+                "minecraft:custom_data": {
+                  "yggdrasil": {
+                    "id": "yggdrasil.asflors.treasure.real_sword"
+                  }
                 }
               }
             },
