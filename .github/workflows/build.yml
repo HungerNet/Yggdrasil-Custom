@@ -2,7 +2,7 @@ name: Package Datapack
 
 on:
   push:
-    branches: [ main ]
+    branches: [ alternative ]
   workflow_dispatch:
 
 jobs:
