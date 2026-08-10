@@ -19,9 +19,15 @@
                             }
                         },
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "options": "#yggdrasil:structure/asflors/asflors_sword",
-                            "only_compatible": true
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": 5,
+                                "minecraft:unbreaking": 3,
+                                "minecraft:mending": 1,
+                                "minecraft:looting": 3,
+                                "minecraft:sweeping": 3
+                            },
+                            "add": false
                         },
                         {
                             "function": "minecraft:set_components",
@@ -35,7 +41,8 @@
                                     "yggdrasil": {
                                         "id": "yggdrasil.asflors.treasure.real_sword"
                                     }
-                                }
+                                },
+                                "minecraft:unbreakable": true
                             }
                         },
                         {
