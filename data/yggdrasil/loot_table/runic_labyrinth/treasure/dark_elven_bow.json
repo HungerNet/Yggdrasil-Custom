@@ -19,25 +19,16 @@
               }
             },
             {
-              "function": "minecraft:enchant_randomly",
-              "options": "#yggdrasil:structure/runic_labyrinth/dark_elven_bow",
-              "only_compatible": true
-            },
-            {
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:infinity": 1,
                 "minecraft:mending": 1
               },
-              "add": true
+              "add": false
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:durability": {
-                  "max_damage": 768,
-                  "damage": 0
-                },
                 "minecraft:custom_data": {
                   "yggdrasil": {
                     "id": "yggdrasil.runic_labyrinth.treasure.dark_elven_bow"

@@ -17,7 +17,7 @@
 					"functions": [
 						{
 							"function": "minecraft:enchant_with_levels",
-							"options": "#yggdrasil:equipment/item/sword",
+							"options": "#yggdrasil:equipment/item/trident",
 							"levels": {
 								"min": 20,
 								"max": 75

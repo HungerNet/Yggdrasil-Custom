@@ -33,12 +33,11 @@
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
-                                "minecraft:impaling": 5,
-                                "minecraft:unbreaking": 3,
-                                "minecraft:mending": 1,
-                                "minecraft:channeling": 1,
-                                "minecraft:riptide": 5
-                            }
+                                "minecraft:riptide": 5,
+                                "minecraft:unbreaking": 5,
+                                "minecraft:mending": 1
+                            },
+                            "add": false
                         },
                         {
                             "function": "minecraft:set_components",

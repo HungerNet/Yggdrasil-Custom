@@ -24,6 +24,21 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
+					"value": "yggdrasil:runic_labyrinth/treasure/dark_elven_bow",
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.1
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
 					"value": "yggdrasil:runic_labyrinth/lore/dark_elf_discovery_journal",
 					"weight": 1,
 					"conditions": [

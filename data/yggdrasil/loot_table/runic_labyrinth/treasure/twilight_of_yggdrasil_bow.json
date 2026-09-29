@@ -19,9 +19,17 @@
 							}
 						},
 						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#yggdrasil:structure/runic_labyrinth/twilight_of_yggdrasil_bow",
-							"only_compatible": true
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:power": 5,
+								"minecraft:punch": 2,
+								"minecraft:flame": 1,
+								"minecraft:infinity": 1,
+								"minecraft:mending": 1,
+								"minecraft:unbreaking": 3,
+								"minecraft:vanishing_curse": 1
+							},
+							"add": false
 						},
 						{
 							"function": "minecraft:set_components",
@@ -44,39 +52,6 @@
 								}
 							],
 							"mode": "replace_all"
-						},
-						{
-							"function": "minecraft:set_attributes",
-							"modifiers": [
-								{
-									"attribute": "minecraft:movement_speed",
-									"id": "yggdrasil.twilight_of_yggdrasil_bow.movement_speed",
-									"amount": 1.15,
-									"operation": "add_multiplied_base",
-									"slot": "mainhand"
-								},
-								{
-									"attribute": "minecraft:knockback_resistance",
-									"id": "yggdrasil.twilight_of_yggdrasil_bow.knockback_resistance",
-									"amount": 0.25,
-									"operation": "add_multiplied_total",
-									"slot": "mainhand"
-								},
-								{
-									"attribute": "minecraft:safe_fall_distance",
-									"id": "yggdrasil.twilight_of_yggdrasil_bow.safe_fall_distance",
-									"amount": 7,
-									"operation": "add_value",
-									"slot": "mainhand"
-								},
-								{
-									"attribute": "minecraft:gravity",
-									"id": "yggdrasil.twilight_of_yggdrasil_bow.gravity",
-									"amount": 1.25,
-									"operation": "add_multiplied_total",
-									"slot": "mainhand"
-								}
-							]
 						}
 					]
 				}
